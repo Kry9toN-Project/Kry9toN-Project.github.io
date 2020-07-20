@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html id="home">
+  {% include head.html %}
+<body class="text-white" onload="countDown();">
+    {% include navbar.html %}
+      <div class="container my-5 text-center">
+        <div class="card">
+          <div class="card-body">
+            <h3>File: {{ page.name }}</h3><br/>
+            <h4>Link will appear in <span id="timer"></span> seconds.</h4> 
+             
+            <span id="link"></span>
+          </div>
+        </div>
+     </div>
+
+    <script type="text/javascript">  
+    var counter = 25; 
+    function countDown()
+    {       
+        if(counter>=0)
+        {
+            document.getElementById("timer").innerHTML = counter;
+        }
+        else
+        { 
+            download(); 
+            return; 
+        }
+        counter -= 1; 
+         
+        var counter2 = setTimeout("countDown()",1000); 
+        return; 
+    } 
+    function download()
+    { 
+        document.getElementById("link").innerHTML = "<div class='text-center'><a href='{{ page.link }}' class='btn'><i class='fas fa-download'></i> Get the link</a></div>";
+    } 
+   </script> 
+
+   {% include footer.html %}
+   </body>
+  {% include js.html %}
+</html>

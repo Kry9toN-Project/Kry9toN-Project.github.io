@@ -1,0 +1,34 @@
+---
+layout: default
+title: Vince - kernel 4.9
+excerpt_separator: <!--morepost-->
+---
+
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="text-center animate__animated animate__fadeInLeftBig wow">Kernel 4.9</h2>
+            <hr class="animate__animated animate__fadeInLeftBig wow">
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+       {% for kernel in site.vince49 %}
+        <div class="col-sm-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <h5 class="card-title">File Name: {{ kernel.name }}</h5>
+              <p class="card-text">Size: {{ kernel.size }}</p>
+              <p class="card-text">Version: {{ kernel.version }}</p>
+              <p class="card-text">MD5: {{ kernel.md5 }}</p>
+              <p class="card-text">Date: {{ kernel.date | date_to_long_string }}</p>
+              <p>Changelog:</p>
+              <pre class="text-warning">{{ kernel.changelog }}</pre>
+              <a href="{{ kernel.url }}" class="btn">Download</a>
+            </div>
+          </div>
+        </div>
+       {% endfor %}
+      </div>
+    </div>
+  </div>
