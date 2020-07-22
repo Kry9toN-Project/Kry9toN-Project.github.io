@@ -17,15 +17,15 @@ title: Vince - kernel 4.9
           <div class="card mb-3 animate__animated animate__fadeInLeftBig wow">
             <div class="card-body">
               <h5 class="card-title"><i class="fas fa-file-archive"></i> File Name: {{ kernel.name }}</h5>
-              <i class="fas fa-balance-scale"> Size: {{ kernel.size }}</i>
+              <i class="fas fa-balance-scale card-text font-color"> Size: {{ kernel.size }}</i>
               </br>
-              <i class="fas fa-filter"> Version: {{ kernel.version }}</i>
+              <i class="fas fa-filter card-text font-color"> Version: {{ kernel.version }}</i>
               </br>
-              <i class="fas fa-file-signature card-text"> MD5: {{ kernel.md5 }}</i>
+              <i class="fas fa-file-signature card-text font-color"> MD5: {{ kernel.md5 }}</i>
               </br>
-              <i class="fas fa-calendar-alt card-text"> Date: {{ kernel.date | date_to_long_string }}</i>
+              <i class="fas fa-calendar-alt card-text font-color"> Date: {{ kernel.date | date_to_long_string }}</i>
               </br>
-              <i class="fas fa-exclamation-circle card-text"> Changelog:</i>
+              <i class="fas fa-exclamation-circle card-text font-color"> Changelog:</i>
               <pre>{{ kernel.changelog }}</pre>
               <a href="{{ kernel.url }}" class="btn">Download</a>
             </div>
