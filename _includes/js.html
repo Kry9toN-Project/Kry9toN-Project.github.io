@@ -5,3 +5,24 @@
 <script src="https://kry9ton.tech/js/wow.js"></script>
 <script src="https://kry9ton.tech/js/jquery.easing.js"></script>
 <script src="https://kry9ton.tech/js/main.js"></script>
+
+<script>
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+
+  if ($(this).scrollTop() > 100) {
+    $('.back-to-top').fadeIn('slow');
+  }
+
+  $('.back-to-top').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+</script>
