@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <body class="text-white" onload="countDown();">
     {% include navbar.html %}
       <div class="container my-5 text-center">
         <div class="card">
           <div class="card-body">
             <h3>File: {{ page.name }}</h3><br/>
-            <h4>Link will appear in <span id="timer"></span> seconds.</h4> 
-             
-            <span id="link"></span>
+            <h4>Link will appear in <span id="timer"></span> seconds.</h4>
+            </br>
+            <form method="get" action="{{ page.link }}"onsubmit="return submitUserForm();">
+                <div class="g-recaptcha mx-auto" style="width: 300px;" data-sitekey="6Lc3KLUZAAAAABZslZv7wJqKPuklqFE7t1A5qVoy" data-callback="verifyCaptcha"></div>
+                </br>
+                <div id="g-recaptcha-error"></div>
+                </br>
+                <span id="link"></span>
+            </form>
           </div>
         </div>
      </div>
@@ -34,11 +41,29 @@
     } 
     function download()
     { 
-        document.getElementById("link").innerHTML = "<div class='text-center'><a href='{{ page.link }}' class='btn'><i class='fas fa-download'></i> Get the link</a></div>";
+        document.getElementById("link").innerHTML = '<input class="btn" type="submit" name="submit" value="Get Link" />';
     } 
    </script> 
 
    {% include footer.html %}
    </body>
   {% include js.html %}
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+  </script>
+  
+<script>
+function submitUserForm() {
+    var response = grecaptcha.getResponse();
+    console.log(response.length);
+    if(response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<div class="alert alert-danger" role="alert">Please checked recaptcha!!</div>';
+        return false;
+    }
+    return true;
+}
+ 
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}
+</script>
 </html>

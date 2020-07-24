@@ -1,19 +1,42 @@
 ---
 layout: default
-title: Vince - kernel 3.18
+title: 4.9
 excerpt_separator: <!--morepost-->
 ---
 
-  <div class="container my-5">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb bg-second">
+    <li class="breadcrumb-item"><a class="accent" href="/download">Device list</a></li>
+    <li class="breadcrumb-item"><a class="accent" href="/download/vince">vince</a></li>
+    <li class="breadcrumb-item active">{{ page.title | downcase }}</li>
+  </ol>
+</nav>
+
+
+  <div class="container mb-5">
     <div class="row">
         <div class="col-sm-12">
-            <h2 class="text-center animate__animated animate__fadeInLeftBig wow">Kernel 3.18</h2>
+            <h2 class="text-center animate__animated animate__fadeInLeftBig wow">Kernel {{ page.title }}</h2>
             <hr class="animate__animated animate__fadeInLeftBig wow">
         </div>
     </div>
+    <div class="container animate__animated animate__fadeInLeftBig wow">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <h4>Build status : </h4>
+            </div>
+            <div class="d-flex justify-content-end mr-4 mt-1">
+              <a href="https://cloud.drone.io/Kry9toN/kernel_xiaomi_vince-4.9"><img class="img-fluid mt-1" src="https://cloud.drone.io/api/badges/Kry9toN/kernel_xiaomi_vince-4.9/status.svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="row">
-       {% for kernel in site.vince318 %}
+       {% for kernel in site.vince49 %}
         <div class="col-sm-6">
           <div class="card mb-3 animate__animated animate__fadeInLeftBig wow">
             <div class="card-body">
