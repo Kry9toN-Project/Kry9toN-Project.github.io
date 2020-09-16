@@ -44,7 +44,9 @@ collections:
   vincemiui:
     output: true
     permalink: /download/:categories/:name
-   
+  joyaosp:
+    output: true
+    permalink: /download/:categories/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
