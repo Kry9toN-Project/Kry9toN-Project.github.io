@@ -1,10 +1,11 @@
 <!-- JS -->
-<script src="https://kry9ton.tech/js/jquery.js"></script>
-<script src="https://kry9ton.tech/js/popper.js"></script>
-<script src="https://kry9ton.tech/js/bootstrap.js"></script>
-<script src="https://kry9ton.tech/js/wow.js"></script>
-<script src="https://kry9ton.tech/js/jquery.easing.js"></script>
-<script src="https://kry9ton.tech/js/main.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/popper.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/jquery.easing.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
 
 <script>
   $(window).scroll(function() {
@@ -28,10 +29,8 @@
     }, 1500, 'easeInOutExpo');
     return false;
   });
-</script>
 
-<script>
-  app.post('/incidents', function(req, res) {
+  $('/incidents', function(req, res) {
     secretKey = "6Lc3KLUZAAAAAGQS1128JESZtvXzYJEwxGG3cq6o";
     var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
   
@@ -43,5 +42,6 @@
       } else {
         // complete upload
       }
-   })
+   });
+  });
 </script>

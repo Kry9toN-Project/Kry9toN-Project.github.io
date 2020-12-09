@@ -4,26 +4,28 @@ title: MIUI
 excerpt_separator: <!--morepost-->
 ---
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb bg-second">
-    <li class="breadcrumb-item"><a class="accent" href="/download">Device list</a></li>
-    <li class="breadcrumb-item"><a class="accent" href="/download/vince">vince</a></li>
-    <li class="breadcrumb-item active">{{ page.title | downcase }}</li>
-  </ol>
-</nav>
+<div class="container-fluid">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb bg-second">
+      <li class="breadcrumb-item"><a class="accent" href="/download">Device list</a></li>
+      <li class="breadcrumb-item"><a class="accent" href="/download/vince">vince</a></li>
+      <li class="breadcrumb-item active">{{ page.title | downcase }}</li>
+    </ol>
+  </nav>
+</div>
 
   <div class="container mb-5">
     <div class="row">
         <div class="col-sm-12">
-            <h2 class="text-center animate__animated animate__fadeInLeftBig wow">Kernel {{ page.title }}</h2>
-            <hr class="animate__animated animate__fadeInLeftBig wow">
+            <h2 class="text-center">Kernel {{ page.title }}</h2>
+            <hr>
         </div>
     </div>
     <div class="container">
       <div class="row">
        {% for kernel in site.vincemiui %}
         <div class="col-sm-6 my-3">
-          <div class="card animate__animated animate__fadeInLeftBig wow">
+          <div class="card animate__animated animate__fadeInLeft wow">
             <div class="card-body">
               <h5 class="card-title"><i class="fas fa-file-archive"></i> File Name: {{ kernel.name }}</h5>
               <i class="fas fa-balance-scale card-text font-color"> Size: {{ kernel.size }}</i>
