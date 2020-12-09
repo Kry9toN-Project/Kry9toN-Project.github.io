@@ -10,18 +10,35 @@
                     <h5 class="card-title">{{ page.title }}</h5>
                     <p class="card-text"><small class="text-muted">{{ page.date | date_to_long_string }} | {{ page.author }}</small></p>
                     <p class="card-text">{{ content }}</p>
-                    <div class="dropdown">
-                      <button class="btn dropdown-toggle my-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Share this
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item fab fa-facebook-f" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"> Facebook</a></li>
-                        <li><a class="dropdown-item fab fa-twitter" href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}"> Twitter</a></li>
-                        <li><a class="dropdown-item fab fa-reddit" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"> Reddit</a></li>
-                        <li><a class="dropdown-item fab fa-whatsapp" href="whatsapp://send?text={{ page.title }}: {{ site.url }}{{ page.url }}" data-action="share/whatsapp/share"> WhatsApp</a></li>
-                        <li><a class="dropdown-item fab fa-telegram" href="tg://msg?url={{ site.url }}{{ page.url }}&text={{ page.title }}"> Telegram</a></li>
-                      </ul>
-                    </div>
+                    <ul class="list-unstyled list-inline text-center">
+<hr>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+          <i class="fab fa-facebook-f fa-3x"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tw mx-1" href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank">
+          <i class="fab fa-twitter fa-3x"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-gh mx-1" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}" target="_blank">
+          <i class="fab fa-reddit fa-3x"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tg mx-1" href="whatsapp://send?text={{ page.title }}: {{ site.url }}{{ page.url }}" data-action="share/whatsapp/share" target="_blank">
+          <i class="fab fa-whatsapp fa-3x"> </i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a class="btn-floating btn-tg mx-1" href="tg://msg?url={{ site.url }}{{ page.url }}&text={{ page.title }}" target="_blank">
+          <i class="fab fa-telegram fa-3x"> </i>
+        </a>
+      </li>
+    </ul>
+<hr>
                   </div>
                   {% include discus.html %}
           </div>
