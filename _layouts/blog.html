@@ -11,17 +11,16 @@
                     <p class="card-text"><small class="text-muted">{{ page.date | date_to_long_string }} | {{ page.author }}</small></p>
                     <p class="card-text">{{ content }}</p>
                     <div class="dropdown">
-                      <button class="btn dropdown-toggle my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn dropdown-toggle my-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
                         Share this
                       </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item fab fa-facebook-f" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"> Facebook</a>
-                        <a class="dropdown-item fab fa-twitter" href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}"> Twitter</a>
-                        <a class="dropdown-item fab fa-reddit" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"> Reddit</a>
-                        <a class="dropdown-item fab fa-whatsapp" href="whatsapp://send?text={{ page.title }}: {{ site.url }}{{ page.url }}" data-action="share/whatsapp/share"> WhatsApp</a>
-                        <a class="dropdown-item fab fa-telegram" href="tg://msg?url={{ site.url }}{{ page.url }}&text={{ page.title }}"> Telegram</a>
-
-                      </div>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item fab fa-facebook-f" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank"> Facebook</a></li>
+                        <li><a class="dropdown-item fab fa-twitter" href="http://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title }}"> Twitter</a></li>
+                        <li><a class="dropdown-item fab fa-reddit" href="https://reddit.com/submit?url={{ site.url }}{{ page.url }}&title={{ page.title }}"> Reddit</a></li>
+                        <li><a class="dropdown-item fab fa-whatsapp" href="whatsapp://send?text={{ page.title }}: {{ site.url }}{{ page.url }}" data-action="share/whatsapp/share"> WhatsApp</a></li>
+                        <li><a class="dropdown-item fab fa-telegram" href="tg://msg?url={{ site.url }}{{ page.url }}&text={{ page.title }}"> Telegram</a></li>
+                      </ul>
                     </div>
                     {% include discus.html %}
                   </div>
