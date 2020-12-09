@@ -20,38 +20,51 @@
           </div>
         </div>
      </div>
-
-    <script type="text/javascript">  
-    var counter = 25; 
-    function countDown()
-    {       
-        if(counter>=0)
-        {
-            document.getElementById("timer").innerHTML = counter;
-        }
-        else
-        { 
-            download(); 
-            return; 
-        }
-        counter -= 1; 
-         
-        var counter2 = setTimeout("countDown()",1000); 
-        return; 
-    } 
-    function download()
-    { 
-        document.getElementById("link").innerHTML = '<input class="btn" type="submit" name="submit" value="Get Link" />';
-    } 
-   </script> 
-
    {% include footer.html %}
-   </body>
+</body>
   {% include js.html %}
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
-  </script>
-  
+
+<script type="text/javascript">  
+var counter = 25; 
+function countDown()
+{       
+    if(counter>=0)
+    {
+        document.getElementById("timer").innerHTML = counter;
+    }
+    else
+    { 
+        download(); 
+        return; 
+    }
+    counter -= 1; 
+     
+    var counter2 = setTimeout("countDown()",1000); 
+    return; 
+} 
+function download()
+{ 
+    document.getElementById("link").innerHTML = '<input class="btn" type="submit" name="submit" value="Get Link" />';
+} 
+</script>
+
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 <script>
+  $(function(req, res) {
+    secretKey = "6Lc3KLUZAAAAAGQS1128JESZtvXzYJEwxGG3cq6o";
+    var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+  
+    request(verificationUrl,function(error,response,body) {
+      body = JSON.parse(body);
+      // Success will be true or false depending upon captcha validation.
+      if(body.success !== undefined && !body.success) {
+        // handle error
+      } else {
+        // complete upload
+      }
+   });
+  });
+
 function submitUserForm() {
     var response = grecaptcha.getResponse();
     console.log(response.length);
