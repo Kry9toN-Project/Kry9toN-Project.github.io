@@ -30,6 +30,7 @@ twitter_username: dhimasbpy
 github_username:  kry9ton
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
