@@ -30,3 +30,48 @@
     return false;
   });
 </script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBLxztEkSVftuyOeKn8Cf1psu9W8sIy7mY",
+    authDomain: "krypton-web.firebaseapp.com",
+    projectId: "krypton-web",
+    storageBucket: "krypton-web.appspot.com",
+    messagingSenderId: "848117563079",
+    appId: "1:848117563079:web:67ebee6c2a10c7ef0008e2"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+        const messaging = firebase.messaging();
+        messaging
+            .requestPermission()
+            .then(function () {
+                console.log("Notification permission granted.");
+                
+                // get the token in the form of promise
+                return messaging.getToken()
+            })
+            .catch(function (err) {
+                console.log("Unable to get permission to notify.", err);
+            });
+
+        let enableForegroundNotification = true;
+        messaging.onMessage(function(payload) {
+            console.log("Message received. ", payload);
+
+            if(enableForegroundNotification) {
+                const {title, ...options} = JSON.parse(payload.data.notification);
+                navigator.serviceWorker.getRegistrations().then(registration => {
+                    registration[0].showNotification(title, options);
+                });
+            }
+        });
+</script>
