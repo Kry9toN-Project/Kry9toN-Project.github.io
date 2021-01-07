@@ -60,8 +60,14 @@
                 // get the token in the form of promise
                 return messaging.getToken()
             })
+            .then(function (token) {
+                sendTokenToServer(token)
+                updateUIForPushEnabled(yoken)
+            })
             .catch(function (err) {
                 console.log("Unable to get permission to notify.", err);
+                updateUIForPushPermissionRequired();
+                setTokenSentToServer(false);
             });
 
         let enableForegroundNotification = true;
