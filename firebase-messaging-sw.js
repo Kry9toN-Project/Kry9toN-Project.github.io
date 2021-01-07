@@ -1,10 +1,6 @@
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+importScripts('https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/8.2.1/firebase-messaging.js');
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBLxztEkSVftuyOeKn8Cf1psu9W8sIy7mY",
@@ -34,4 +30,3 @@ messaging.setBackgroundMessageHandler(function(payload) {
         notificationOptions,
     );
 });
-</script>
