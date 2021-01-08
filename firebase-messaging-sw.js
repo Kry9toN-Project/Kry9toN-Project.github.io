@@ -13,6 +13,8 @@ importScripts('https://www.gstatic.com/firebasejs/8.2.1/firebase-messaging.js');
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
+const messaging = firebase.messaging();
+
 messaging.setBackgroundMessageHandler(function(payload) {
     console.log(
         "[firebase-messaging-sw.js] Received background message ",
