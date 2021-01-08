@@ -34,6 +34,7 @@
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -52,6 +53,7 @@
   firebase.initializeApp(firebaseConfig);
 
         const messaging = firebase.messaging();
+        const database = firebase.database();
         messaging
             .requestPermission()
             .then(function () {
@@ -61,8 +63,7 @@
                 return messaging.getToken({vapidKey: 'BEXNwEE5szUizSk2NJk6LtqqM9lP6BrRaAnVrTp0YM07zLtYLmaxjLVH8MxIlHC_-QtK0c5vVTYE9DEl6nXtIco'})
             })
             .then(function (token) {
-                sendTokenToServer(token)
-                updateUIForPushEnabled(token)
+                database.ref('users/' + this.currentUid + '/notificationTokens/' + token).set(true);
             })
             .catch(function (err) {
                 console.log("Unable to get permission to notify.", err);
