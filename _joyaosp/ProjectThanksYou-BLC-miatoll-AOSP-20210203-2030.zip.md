@@ -7,5 +7,5 @@ md5: 687f8e6268a55e4ed637437290b042fc
 changelog: • Added devreq boost and cpu input boost<br>• disable debug log
 categories: AOSP
 layout: waitting
-link: https://www.pling.com/p/1406049/?g-recaptcha-response=03AGdBq25JVYmG7Cz430eOEGho493GuzyI2FMdrylMnnxOhI_jANFFo_mfbV3oeEXVJ7lj9q9Dzjuuam9yqF0EupvbeT0beImv9M80pOotuCors_HVFVxz0fu1sDmjEKPawiRawn808uGXHXpPKcdMeM_7q17OqzLZf3L8CGpDfv5YPtm2ysCWRENmSfREM7vddaKdeWec9XdmPSN4Veb5ruvF2VuPS8vXNxx3vdvnK8ODGZA5g4r_6SZkIWTGwkKoaCgU685JZOF9VpJprD9jD4pAJZhX68Ve4IvdY6wyICLUadR98NGX1HXcYAYZoXAMqR_ayMaPctSkMS5PnGq5TpeFfVli_YZCQgUGNJijY8gGIgT3ICMFDBfzIUenbnkl8md5pQEp9tVM30EeCLw9LJmbTMDnXe78-Wv3vuLAMfuS_3ek4kWEnXqAxEKwsC_XtX0kWM5ZuNy-gEcbicidjk6-MFvGMmRJbA&submit=Get+Link
+link: https://www.pling.com/p/1406049/
 ---
