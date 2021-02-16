@@ -45,7 +45,7 @@ collections:
   vincemiui:
     output: true
     permalink: /download/:categories/:name
-  joyaosp:
+  miatoll:
     output: true
     permalink: /download/:categories/:name
 
