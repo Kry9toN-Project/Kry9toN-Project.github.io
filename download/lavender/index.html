@@ -1,13 +1,14 @@
 ---
 layout: no-index
-title: Device list
+title: Lavender
 ---
 
-<meta name="KryPtoN Kernel Download" content="Download KryPtoN Kernel for your devices">
+<meta name="KryPtoN Kernel joyeuse" content="Download KryPtoN Kernel for your devices">
 <div class="container-fluid">
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb bg-second">
-      <li class="breadcrumb-item active">{{ page.title }}</li>
+      <li class="breadcrumb-item"><a class="accent" href="/download">Device list</a></li>
+      <li class="breadcrumb-item active">{{ page.title | downcase }}</li>
     </ol>
   </nav>
 </div>
@@ -15,13 +16,11 @@ title: Device list
   <div class="container text-center mb-5">
     <div class="row">
         <div class="col-sm-12">
-            <h2 class="text-center">Device list</h2>
+            <h2 class="text-center">{{ page.title }}</h2>
             <hr>
         </div>
     </div>
     <p>Choose according to your device and the default kernel version on your device.</p>
     <p class="text-warning">If you want to support me, please dont mirror link download</p>
-    <a class="btn my-2 d-block d-lg-inline" href="/download/vince">vince</a>
-    <a class="btn my-2 d-block d-lg-inline" href="/download/miatoll">miatoll</a>
-    <a class="btn my-2 d-block d-lg-inline" href="/download/lavender">lavender</a>
+    <a class="btn my-2 d-block d-lg-inline" href="/download/lavender/aosp.html">AOSP</a>
   </div>
