@@ -8,8 +8,6 @@ thum: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_o2fiMHLzxyL2M24nx
 author: KryPtoN
 ---
 
-## What is Linux Kernel?
-
 The Linux® kernel is the main component of a Linux operating system (OS) and is the core interface between a computer’s hardware and its processes. It communicates between the 2, managing resources as efficiently as possible.
 
 The kernel is so named because—like a seed inside a hard shell—it exists within the OS and controls all the major functions of the hardware, whether it’s a phone, laptop, server, or any other kind of computer.
