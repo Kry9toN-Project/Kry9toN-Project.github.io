@@ -136,6 +136,10 @@ h5 {
   color: var(--color-font);
 }
 
+.card-title h5 {
+  color: var(--color-accent);
+}
+
 h6 {
   color: var(--color-font);
 }
