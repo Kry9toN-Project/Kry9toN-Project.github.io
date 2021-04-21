@@ -8,6 +8,8 @@ thum: https://raw.githubusercontent.com/Kry9toN-Project/Drone-CI/master/img/icon
 author: KryPtoN
 ---
 
+KryPtoN Kernel for MIATOLL Release 🔥🔥🔥
+
 📱 Device: miatoll
 
 🔢 Version: PerfLur
@@ -23,7 +25,9 @@ author: KryPtoN
 
 💸 Donate Me if you like my work
 
-[Paypal](https://www.paypal.me/KomodoOS) | [Saweria](https://saweria.co/donate/Kry9toN) for Indonesian
+[Paypal](https://www.paypal.me/KomodoOS) for international
+
+[Saweria](https://saweria.co/donate/Kry9toN) for Indonesian
 
 👥 [Group](http://t.me/KKgrupofficial) | 📺 [Channel](http://t.me/KryPtoNKernel)
 
