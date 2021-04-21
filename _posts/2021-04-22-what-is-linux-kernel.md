@@ -3,8 +3,8 @@ layout: blog
 title:  "What is Linux Kernel?.."
 date:   2021-04-22 01:36:00 +0700
 categories: article
-image: 
-thum: 
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_o2fiMHLzxyL2M24nx3aRpAU0SwmatgZ0w&usqp=CAU
+thum: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH_o2fiMHLzxyL2M24nx3aRpAU0SwmatgZ0w&usqp=CAU
 author: KryPtoN
 ---
 
