@@ -29,6 +29,6 @@ KryPtoN Kernel for MIATOLL Release 🔥🔥🔥
 
 [Saweria](https://saweria.co/donate/Kry9toN) for Indonesian
 
-👥 [Group](http://t.me/KKgrupofficial) | 📺 [Channel](http://t.me/KryPtoNKernel)
+👥 [Group](http://t.me/KKgrupofficial) 📺 [Channel](http://t.me/KryPtoNKernel)
 
 ⬇️ [Download](https://kryptonproject.my.id/download/aosp/perflur-blc-miatoll-aosp-20210414-0752-zip)
