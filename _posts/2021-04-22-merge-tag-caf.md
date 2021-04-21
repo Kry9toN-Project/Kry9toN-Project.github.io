@@ -22,7 +22,7 @@ Code Aurora, a Linux Foundation Collaborative project. that host the tested open
 - You should know your kernel version like 3.18.y, 4.4.y etc.
 
 ## Instructions:
-Open this link ( https://wiki.codeaurora.org/xwiki/bin/QAEP/release ) in your browser.
+Open this [link](https://wiki.codeaurora.org/xwiki/bin/QAEP/release) in your browser.
 
 Check for the chipset and the Android version here. Find the caf tag your device is on. Like in my case My device is Redmi Note 4 and it has msm8953 chipset and my kernel is for Android 8.1. So now I can easily know that which CAF tag I have to merge. In my case my kernel was on LA.UM.6.6.r1-07400-89xx.0 tag. The newer tag is LA.UM.6.6.r1-08300-89xx.0
 
