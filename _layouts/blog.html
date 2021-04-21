@@ -4,7 +4,7 @@
 <body>
   {% include navbar-blog.html %}
  
-        <meta name="{{ page.title }}" content="{{ content }}">
+        <meta name="{{ page.title }}" content="{{ content | strip_html }}">
         <div class="card">
           <div class="container mt-5">
             <img src="{{ page.image }}" style="max-height:400px" class="card-img-top" alt="...">
