@@ -8,7 +8,7 @@ thum: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zXyQ3kh41m96pRBQZB
 author: KryPtoN
 ---
 
-In this articlr I will be guiding you about how you can merge latest CAF tags in your CAF based kernel. Many people who just started compiling the kernels still don't know how to merge a CAF tag because there isn't any proper guide available. I will try to make the guide as simple as possible.
+In this article I will be guiding you about how you can merge latest CAF tags in your CAF based kernel. Many people who just started compiling the kernels still don't know how to merge a CAF tag because there isn't any proper guide available. I will try to make the guide as simple as possible.
 
 ## What is CAF?
 Code Aurora, a Linux Foundation Collaborative project. that host the tested open source code needed to provide upstream enablement for innovative, performance optimized support for system on a chip (SoC) products and related ecosystems, and also serves as a staging area for code that is submitted to upstream projects such as the Linux kernel and Android.
@@ -64,10 +64,10 @@ git push
 Congratulations! You have successfully merged latest CAF tag in your kernel.
 
 
-Tips:
+## Tips:
 - Test each CAF tag
 - Do not multiple tags at once without testing the previous one
 - Bookmark all the links from this thread, even this thread.
 
 ## Credit:
-- Original post https://forum.xda-developers.com/t/reference-merge-latest-caf-tag-in-kernel.3787564/
+- Original [post](https://forum.xda-developers.com/t/reference-merge-latest-caf-tag-in-kernel.3787564/)
