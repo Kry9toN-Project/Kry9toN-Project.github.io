@@ -10,30 +10,30 @@
             <h3>File: {{ page.name }}</h3><br/>
             {% include about.html %}
 
-<!-- Download Ads Vertical -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7142462988454705"
-     data-ad-slot="5953278418"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+            <!-- Download Ads Vertical -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-7142462988454705"
+                data-ad-slot="5953278418"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
 
             <h4>Link will appear in <span id="timer"></span> seconds.</h4>
             </br>
 
-<!-- Download Ads Square -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7142462988454705"
-     data-ad-slot="5326592457"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+            <!-- Download Ads Square -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-7142462988454705"
+                data-ad-slot="5326592457"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
 
             <form method="get" action="{{ page.link }}"onsubmit="return submitUserForm();">
                 <div class="g-recaptcha mx-auto" style="width: 300px;" data-sitekey="6Lc3KLUZAAAAABZslZv7wJqKPuklqFE7t1A5qVoy" data-callback="verifyCaptcha"></div>
@@ -46,65 +46,65 @@
         </div>
      </div>
    {% include footer.html %}
-</body>
-  {% include js.html %}
-
-<script type="text/javascript">  
-var counter = 25; 
-function countDown()
-{       
-    if(counter>=0)
-    {
-        document.getElementById("timer").innerHTML = counter;
-    }
-    else
-    { 
-        download(); 
-        return; 
-    }
-    counter -= 1; 
-     
-    var counter2 = setTimeout("countDown()",1000); 
-    return; 
-} 
-function download()
-{ 
-    document.getElementById("link").innerHTML = '<input class="btn" type="submit" name="submit" value="Get Link" />';
-} 
-</script>
-
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
-<script>
-  $(function(req, res) {
-    secretKey = "6Lc3KLUZAAAAAGQS1128JESZtvXzYJEwxGG3cq6o";
-    var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
-  
-    request(verificationUrl,function(error,response,body) {
-      body = JSON.parse(body);
-      // Success will be true or false depending upon captcha validation.
-      if(body.success !== undefined && !body.success) {
-        // handle error
-      } else {
-        // complete upload
-      }
-   });
-  });
-
-function submitUserForm() {
-    var response = grecaptcha.getResponse();
-    console.log(response.length);
-    if(response.length == 0) {
-        document.getElementById('g-recaptcha-error').innerHTML = '<div class="alert alert-danger" role="alert">Please checked recaptcha!!</div>';
-        return false;
-    }
-    return true;
-}
+   {% include js.html %}
  
-function verifyCaptcha() {
-    document.getElementById('g-recaptcha-error').innerHTML = '';
-}
-</script>
-<!--
-<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3845096,document.body||document.documentElement)</script>
--->
+ <script type="text/javascript">  
+ var counter = 25; 
+ function countDown()
+ {       
+     if(counter>=0)
+     {
+         document.getElementById("timer").innerHTML = counter;
+     }
+     else
+     { 
+         download(); 
+         return; 
+     }
+     counter -= 1; 
+      
+     var counter2 = setTimeout("countDown()",1000); 
+     return; 
+ } 
+ function download()
+ { 
+     document.getElementById("link").innerHTML = '<input class="btn" type="submit" name="submit" value="Get Link" />';
+ } 
+ </script>
+ 
+ <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+ <script>
+   $(function(req, res) {
+     secretKey = "6Lc3KLUZAAAAAGQS1128JESZtvXzYJEwxGG3cq6o";
+     var verificationUrl = "https://www.google.com/recaptcha/api/siteverify?secret=" + secretKey + "&response=" + req.body['g-recaptcha-response'] + "&remoteip=" + req.connection.remoteAddress;
+   
+     request(verificationUrl,function(error,response,body) {
+       body = JSON.parse(body);
+       // Success will be true or false depending upon captcha validation.
+       if(body.success !== undefined && !body.success) {
+         // handle error
+       } else {
+         // complete upload
+       }
+    });
+   });
+ 
+ function submitUserForm() {
+     var response = grecaptcha.getResponse();
+     console.log(response.length);
+     if(response.length == 0) {
+         document.getElementById('g-recaptcha-error').innerHTML = '<div class="alert alert-danger" role="alert">Please checked recaptcha!!</div>';
+         return false;
+     }
+     return true;
+ }
+  
+ function verifyCaptcha() {
+     document.getElementById('g-recaptcha-error').innerHTML = '';
+ }
+ </script>
+ <!--
+ <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://iclickcdn.com/tag.min.js',3845096,document.body||document.documentElement)</script>
+ -->
+</body>
 </html>

@@ -22,6 +22,22 @@
   --color-font-invert: #2E3440;
 }
 
+svg {
+  fill: var(--color-accent);
+}
+
+.bg-accent svg{
+  fill: var(--color-bg-second);
+}
+
+.bg-second svg{
+  fill: var(--color-bg);
+}
+
+.page-footer svg{
+  fill: var(--color-accent);
+}
+
 .jumbotron img {
     width: 250px;
     border: 5px solid var(--color-accent);
@@ -35,9 +51,8 @@ hr {
   border-top: 3px solid var(--color-accent);
 }
 
-section {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.slider-area {
+  padding-top: 5rem;
 }
 
 .bg-accent {
@@ -100,11 +115,11 @@ li {
 }
 
 .font-footer {
-  color: var(--color-font);
+  color: var(--color-font-footer);
 }
 
 .page-footer{
-  background-color: var(--color-bg);
+  background-color: var(--color-accent);
 }
 
 /* Font */
