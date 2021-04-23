@@ -26,15 +26,15 @@ svg {
   fill: var(--color-accent);
 }
 
-.bg-accent svg{
+.bg-accent svg {
   fill: var(--color-bg-second);
 }
 
-.bg-second svg{
+.bg-second svg {
   fill: var(--color-bg);
 }
 
-.page-footer svg{
+.page-footer svg {
   fill: var(--color-accent);
 }
 
@@ -51,8 +51,15 @@ hr {
   border-top: 3px solid var(--color-accent);
 }
 
-.slider-area {
+.landing {
   padding-top: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing {
+    padding-top: 5rem;
+    height: 73vh;
+  }
 }
 
 .bg-accent {
