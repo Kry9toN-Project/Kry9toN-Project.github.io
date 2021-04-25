@@ -15,6 +15,7 @@ excerpt_separator: <!--morepost-->
       <div class="row">
         {% for post in site.posts %}
         <meta name="KryPtoN Blog" content="{{ post.excerpt }}">
+        {% include feed-ads.html %}
         <div class="col-sm-6">
           <div class="card mb-3">
             <img src="{{ post.thum }}" class="card-img-top" style="max-height:400px" alt="Blog Image">
