@@ -109,8 +109,8 @@ new WOW().init();
     return false;
   });
   
-});
-
-$(document).ready(function() {
-  $(".owl-carousel").owlCarousel();
+  $(document).ready(function() {
+    $(".owl-carousel").owlCarousel();
+  });
+ 
 });

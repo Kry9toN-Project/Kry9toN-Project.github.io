@@ -1,0 +1,20 @@
+<input class="form-control me-2" type="search" placeholder="Search name kernel..." aria-label="Search" onkeyup="filter()" id="search">
+
+<script>
+    function filter() {
+      var input, filter, list, card, a, i, txtValue;
+      input = document.getElementById("search");
+      filter = input.value.toUpperCase();
+      list = document.getElementById("list");
+      card = list.getElementsByClassName("card")
+      for (i = 0; i < card.length; i++) {
+          a = card[i].getElementsByTagName("h5")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              card[i].style.display = "";
+          } else {
+              card[i].style.display = "none";
+          }
+      }
+    }
+</script>
