@@ -21,6 +21,8 @@ Code Aurora, a Linux Foundation Collaborative project. that host the tested open
 - You should know the chipset of your device
 - You should know your kernel version like 3.18.y, 4.4.y etc.
 
+{% include article.html %}
+
 ## Instructions:
 Open this [link](https://wiki.codeaurora.org/xwiki/bin/QAEP/release) in your browser.
 
