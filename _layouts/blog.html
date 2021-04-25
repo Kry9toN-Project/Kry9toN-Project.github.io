@@ -12,6 +12,7 @@
               <h5 class="card-title">{{ page.title }}</h5>
               <p class="card-text"><small class="text-muted">{{ page.date | date_to_long_string }} | {{ page.author }}</small></p>
               <p class="card-text">{{ content }}</p>
+              {% include article.html %}
               <ul class="list-unstyled list-inline text-center">
               <hr>
                   <h4>Share this article</h4>
