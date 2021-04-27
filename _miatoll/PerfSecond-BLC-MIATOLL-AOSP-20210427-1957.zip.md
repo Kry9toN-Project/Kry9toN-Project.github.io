@@ -8,5 +8,5 @@ changelog: NOTES!!! A11 enforce only<br>• Merge tag 'LA.UM.9.1.r1-09200-SMxxx0
 
 categories: AOSP
 layout: waitting
-link: https://www.pling.com/p/1406049
+link: https://sourceforge.net/projects/krypton-project/files/miatoll/AOSP/PerfSecond-BLC-MIATOLL-AOSP-20210427-1957.zip
 ---
