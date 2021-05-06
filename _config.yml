@@ -34,29 +34,26 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
 
 collections:
   vince49:
     output: true
+    permalink: /download/:categories/:name
   vince318:
     output: true
+    permalink: /download/:categories/:name
   vincemiui:
     output: true
+    permalink: /download/:categories/:name
   miatoll:
     output: true
+    permalink: /download/:categories/:name
   lavender:
     output: true
-
-pagination:
-  enabled: true
-  debug: false
-  per_page: 4
-  trail: 
-    before: 2 # The number of links before the current page
-    after: 2  # The number of links after the current page
-  sort_field: 'date'
-  sort_reverse: true
+    permalink: /download/:categories/:name
+  nightly:
+    output: true
+    permalink: /download/:categories/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -2,11 +2,6 @@
 layout: downloadpage
 title: Lavender AOSP
 excerpt_separator: <!--morepost-->
-pagination: 
-  enabled: true
-  indexpage: 'aosp'
-  collection: miatoll
-  permalink: '/aosp/:num.html'
 ---
 
 <div class="container-fluid">
@@ -46,7 +41,7 @@ pagination:
     {% include search.html %}
     <div class="container" id="list">
       <div class="row">
-        {% for kernel in paginator.posts %}
+       {% for kernel in site.lavender %}
         <div class="col-sm-6 my-3">
           <div class="card animate__animated animate__fadeInLeft wow">
             <div class="card-body">
@@ -69,5 +64,3 @@ pagination:
       </div>
     </div>
   </div>
-
-  {% include trail-page.html %}
