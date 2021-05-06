@@ -39,21 +39,18 @@ plugins:
 collections:
   vince49:
     output: true
-    permalink: /download/:categories/:name
   vince318:
     output: true
   vincemiui:
     output: true
-    permalink: /download/:categories/:name
   miatoll:
     output: true
   lavender:
     output: true
-    permalink: /download/:categories/:name
 
 pagination:
   enabled: true
-  debug: true
+  debug: false
   per_page: 4
   trail: 
     before: 2 # The number of links before the current page
