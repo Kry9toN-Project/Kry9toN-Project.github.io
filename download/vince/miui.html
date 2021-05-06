@@ -2,6 +2,11 @@
 layout: downloadpage
 title: MIUI
 excerpt_separator: <!--morepost-->
+pagination: 
+  enabled: true
+  indexpage: 'miui'
+  collection: vincemiui
+  permalink: '/miui/:num.html'
 ---
 
 <div class="container-fluid">
@@ -25,7 +30,7 @@ excerpt_separator: <!--morepost-->
     {% include search.html %}
     <div class="container" id="list">
       <div class="row">
-       {% for kernel in site.vincemiui %}
+        {% for kernel in paginator.posts %}
         <div class="col-sm-6 my-3">
           <div class="card animate__animated animate__fadeInLeft wow">
             <div class="card-body">
@@ -48,3 +53,5 @@ excerpt_separator: <!--morepost-->
       </div>
     </div>
   </div>
+
+  {% include trail-page.html %}

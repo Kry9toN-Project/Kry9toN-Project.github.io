@@ -203,3 +203,32 @@ p, a, li {
   background: var(--color-accent);
   color: #fff;
 }
+
+.pagination > li > a
+{
+    background-color: var(--color-bg-second);
+    color: var(--color-accent);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: white;
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.pagination > .active > a
+{
+    color: var(--color-bg-second);
+    background-color: var(--color-accent) !Important;
+    border: solid 1px var(--color-accent) !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: var(--color-accent) !Important;
+    border: solid 1px var(--color-accent);
+}

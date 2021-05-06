@@ -1,9 +1,13 @@
 ---
 layout: downloadpage
-title: 3.18
+title: 4.9
 excerpt_separator: <!--morepost-->
+pagination: 
+  enabled: true
+  indexpage: '49'
+  collection: vince49
+  permalink: '/49/:num.html'
 ---
-
 <div class="container-fluid">
   <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
     <ol class="breadcrumb bg-second">
@@ -14,6 +18,7 @@ excerpt_separator: <!--morepost-->
   </nav>
 </div>
 
+
   <div class="container mb-5">
     <div class="row">
         <div class="col-sm-12">
@@ -21,11 +26,27 @@ excerpt_separator: <!--morepost-->
             <hr>
         </div>
     </div>
+    <div class="container animate__animated animate__fadeInLeft wow">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <h4>Build status : </h4>
+            </div>
+            <div class="col-6">
+              <a href="https://cloud.drone.io/Kry9toN/kernel_xiaomi_vince-4.9">
+                <img class="img-fluid mt-1" src="https://cloud.drone.io/api/badges/Kry9toN/kernel_xiaomi_vince-4.9/status.svg" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     {% include about.html %}
     {% include search.html %}
     <div class="container" id="list">
       <div class="row">
-       {% for kernel in site.vince318 %}
+        {% for kernel in paginator.posts %}
         <div class="col-sm-6 my-3">
           <div class="card animate__animated animate__fadeInLeft wow">
             <div class="card-body">
@@ -48,3 +69,5 @@ excerpt_separator: <!--morepost-->
       </div>
     </div>
   </div>
+
+  {% include trail-page.html %}
