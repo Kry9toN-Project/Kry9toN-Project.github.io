@@ -129,7 +129,7 @@ li {
   background-color: var(--color-accent);
 }
 
-.modal-backdrop {
+.modal-content {
   background-color: var(--color-bg);
 }
 
