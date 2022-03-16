@@ -129,6 +129,10 @@ li {
   background-color: var(--color-accent);
 }
 
+.modal {
+  background-color: var(--color-bg);
+}
+
 /* Font */
 p {
   color: var(--color-font);
