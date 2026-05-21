@@ -2,7 +2,7 @@
 <html>
   {% include head.html %}
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<body class="text-white" onload="countDown();">
+<body class="text-white">
     {% include navbar-no-index.html %}
       <div class="container my-5 text-center">
         <div class="card">
@@ -10,67 +10,19 @@
             <h3>File: {{ page.name }}</h3><br/>
             {% include about.html %}
 
-            <!-- Download Ads Vertical -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-7142462988454705"
-                data-ad-slot="5953278418"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-
-            <h4>Link will appear in <span id="timer"></span> seconds.</h4>
-            </br>
-
-            <!-- Download Ads Square -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-7142462988454705"
-                data-ad-slot="5326592457"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-
-            <form method="get" action="{{ page.link }}"onsubmit="return submitUserForm();">
+            <form method="get" action="{{ page.link }}" onsubmit="return submitUserForm();">
                 <div class="g-recaptcha mx-auto" style="width: 300px;" data-sitekey="6Lc3KLUZAAAAABZslZv7wJqKPuklqFE7t1A5qVoy" data-callback="verifyCaptcha"></div>
                 </br>
                 <div id="g-recaptcha-error"></div>
                 </br>
-                <span id="link"></span>
+                <span id="link"><input class="btn" type="submit" name="submit" value="Get Link" /></span>
             </form>
           </div>
         </div>
      </div>
+     {% include universal-ads.html %}
    {% include footer.html %}
    {% include js.html %}
- 
- <script type="text/javascript">  
- var counter = 25; 
- function countDown()
- {       
-     if(counter>=0)
-     {
-         document.getElementById("timer").innerHTML = counter;
-     }
-     else
-     { 
-         download(); 
-         return; 
-     }
-     counter -= 1; 
-      
-     var counter2 = setTimeout("countDown()",1000); 
-     return; 
- } 
- function download()
- { 
-     document.getElementById("link").innerHTML = '<input class="btn" type="submit" name="submit" value="Get Link" />';
- } 
- </script>
  
  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
  <script>
